@@ -1,12 +1,62 @@
 <!DOCTYPE html>
 <html>
-<head></head>
+<head><style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style></head>
 <body>
-
-<h1>การเปรียบเทียบการเขียนโปรแกรมเชิงวัตถุ (OOP) ในภาษา Java, C++, และ Python</h1>
-
-<p>The HTML <code>button</code> tag defines a clickable button.</p>
-<p>The CSS <code>background-color</code> property defines the background color of an element.</p>
-
-</body>
-</html>
+<h1>เปรียบเทียบความเหมือนและความแตกต่างในการเขียนโปรแกรมแบบ OOP ด้วยภาษา Java, C++, Python</h1>
+<h2>ความเหมือน</h2>
+<p>1. ทั้ง Java, C++, และ Python เป็นภาษาโปรแกรมที่สนับสนุน OOP ทุกภาษาสามารถสร้างและใช้งานคลาสและอ็อบเจกต์ได้</p>
+<p>2. ทุกภาษามีการใช้งานพื้นฐานของ OOP ได้แก่ encapsulation, inheritance, และ polymorphism</p>
+<p>3. ทุกภาษามีวิธีสร้างอ็อบเจกต์ผ่าน constructors และการทำลายอ็อบเจกต์ผ่าน destructors หรือ garbage collection</p>
+<p>4. ทั้งสามภาษามีการจัดการข้อผิดพลาด (Exception Handling) ผ่าน try-catch-finally</p>
+<p>5. ทั้งสามภาษามีการกำหนดระดับการเข้าถึงของข้อมูลในคลาส เช่น public, private, และ protected</p>
+<h2>ความแตกต่าง</h2>
+<table>
+  <tr>
+    <th>คุณสมบัติ</th>
+    <th>Java</th>
+    <th>C++</th>
+    <th>Python</th>
+  </tr>
+  <tr>
+    <td>การจัดการหน่วยความจำ</td>
+    <td>ใช้ Garbage Collector จัดการหน่วยความจำโดยอัตโนมัติ</td> 
+    <td>ต้องจัดการหน่วยความจำเองด้วยคำสั่ง new และ delete</td>
+    <td>ใช้ Garbage Collector แต่มีการจัดการหน่วยความจำแบบ dynamic</td>
+  </tr>
+  <tr>
+    <td>การเขียน Constructor</td>
+    <td>ชื่อ Constructor เหมือนกับชื่อคลาส</td>
+    <td>ชื่อ Constructor เหมือนกับชื่อคลาส</td>
+    <td>ใช้เมธอด __init__()</td>
+  </tr>
+  <tr>
+    <td>Multiple Inheritance</td>
+    <td>ไม่รองรับ Multiple Inheritance โดยตรง (ใช้ Interface แทน)</td>
+    <td>รองรับ Multiple Inheritance</td>
+    <td>รองรับ Multiple Inheritance</td>
+  </tr>
+  <tr>
+    <td>Syntax</td>
+    <td>ต้องประกาศชนิดข้อมูลอย่างชัดเจน เช่น int, String</td>
+    <td>ต้องประกาศชนิดข้อมูลอย่างชัดเจน เช่น int, float</td>
+    <td>ไม่ต้องประกาศชนิดข้อมูลล่วงหน้า</td>
+  </tr>
+  <tr>
+    <td>Abstract Class และ Interface</td>
+    <td>มีทั้ง Abstract Class และ Interface</td>
+    <td>มีเพียง Abstract Class (ใช้ virtual function)</td>
+    <td>มีทั้ง Abstract Class และ Interface (ผ่านการใช้ Abstract Base Classes)</td>
+  </tr>
+  <tr>
+    <td>Method Overloading</td>
+    <td>รองรับการ Overload เมธอด</td>
+    <td>รองรับการ Overload เมธอด</td>
+    <td>ไม่รองรับการ Overload เมธอดโดยตรง แต่สามารถใช้ default arguments</td>
+  </tr>
+</table>
+</body></html>
